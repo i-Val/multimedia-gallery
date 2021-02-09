@@ -1,0 +1,580 @@
+@font-face {
+    font-family:Myfont;
+    src:url("../fonts/Roboto-light.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Myfont;
+    background-attachment: scroll;
+}
+
+
+/*nav {
+	position:fixed;
+	bottom:0;
+	background-color:black;
+}*/
+
+
+.expo {
+    display: none;
+}
+
+html body {
+    text-align: center;
+    min-width: 100vw;
+    font-size: 16px;
+}
+
+
+
+header {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #222;
+    background-image: url("../images/hero-mobile.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+header p {
+    opacity: 0.7;
+    font-size: 2rem;
+}
+.header-overlay {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #000;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.hContainer {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.hSection2 {
+    color: #fff;
+    margin: auto;
+}
+
+/*First section after header, with class name main-section
+ and children sub-section1 & sub-section2*/
+.main-section {
+    width: 80%;
+}
+
+.main-section p {
+    opacity: 0.8;
+    font-size: 1.7rem;
+}
+
+.main-section a {
+    font-weight: 800;
+}
+
+.sub-section2 img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.call {
+    color: green;
+    font-weight: 800;
+}
+
+/*a seperator that demarcates the following section*/
+.divider {
+    height: 7px;
+    width: 65%;
+}
+
+/*The sections part of the landing page, having
+children with className sect*/
+section {
+    color: #555;
+    background-color: #f8f8f8;
+}
+.sec-child-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sect {
+    width: 75%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sect h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.sect p {
+    font-weight: 300;
+}
+
+
+/* style for all local icons*/
+
+.icon img {
+    width: 2rem;
+    height: auto;
+}
+
+.fIcon {
+    width: 2rem;
+    height: auto;
+}
+
+/* footer style*/
+.footer {
+    background-color: #000000;
+    color: #888;
+    font-size: 13px;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.footer-section {
+    max-width: 80%;
+    margin-left: 5%;
+}
+
+
+.footer h4 {
+    font-size: 19px;
+}
+
+.footer a {
+    color: #888;
+}
+
+footer input {
+    color: white;
+}
+
+/*.transparent {
+	position:absolute;
+	z-index:3;
+}*/
+
+
+img.service {
+    max-width: 80%;
+    height: auto;
+}
+
+
+.gframer {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #222;
+    color: #eee;
+}
+
+.gframe {
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.gimage {
+    max-width: 100%;
+    height: auto;
+}
+
+.vid-frame {
+    min-height: 40vh;
+    min-width: 60vw;
+}
+
+
+/*for TAB*/
+@media only screen and (min-width:700px) and (max-width:800px) {
+    .serviceIcons {
+        display:;
+    }
+
+    .expo {
+        display: none;
+    }
+
+    html body {
+        text-align: center;
+        min-width: 100vw;
+        font-size: 16px;
+    }
+
+
+
+    header {
+        position: relative;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: #222;
+        background-image: url("../images/hero-tab.jpg");
+        background-size: cover;
+    }
+
+    header p {
+        opacity: 0.7;
+        font-size: 2rem;
+    }
+    .header-overlay {
+        position: absolute;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: #000;
+        z-index: 0;
+        opacity: 0.7;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hContainer {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100vw;
+    }
+
+
+    .hSection2 {
+        color: #fff;
+        margin: auto;
+    }
+
+    .cta {
+        margin-top: 0;
+    }
+
+    /*First section after header, with class name main-section
+ and children sub-section1 & sub-section2*/
+    .main-section {
+        width: 80%;
+    }
+
+    .main-section p {
+        opacity: 0.8;
+        font-size: 1.7rem;
+    }
+
+    .sub-section2 img {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .call {
+        color: green;
+    }
+
+    /*a seperator that demarcates the following section*/
+    .divider {
+        height: 7px;
+        width: 65%;
+    }
+
+    /*The sections part of the landing page, having
+children with className sect*/
+    section {
+        color: #555;
+        background-color: #f8f8f8;
+    }
+    .sec-child-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sect {
+        width: 40%;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sect h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .sect p {
+        font-weight: 400;
+    }
+
+    img.service {
+        max-width: 80%;
+        height: 170px;
+    }
+
+    /* style for all local icons*/
+
+    .icon img {
+        width: 2rem;
+        height: auto;
+    }
+
+    .fIcon {
+        width: 2rem;
+        height: auto;
+    }
+
+    /* footer style*/
+    .footer {
+        background-color: #000000;
+        color: #555;
+        font-size: 13px;
+        padding-top: 50px;
+        overflow: hidden;
+    }
+
+
+
+    .footer-section {
+        width: 70vw;
+        margin: auto;
+    }
+
+
+    .footer h4 {
+        font-size: 19px;
+    }
+
+
+
+    /*.transparent {
+	position:absolute;
+	z-index:3;
+}*/
+
+}
+
+
+
+@media only screen and (min-width: 800px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    img.service {
+        max-width: 50%;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        position: relative;
+        z-index: 3;
+        height: 10vh;
+    }
+    header {
+        position: relative;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: #222;
+        background-image: url("../images/hero-web.jpg");
+        background-size: cover;
+
+    }
+
+    .header-overlay {
+        position: absolute;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: #000;
+        z-index: 0;
+        opacity: 0.7;
+    }
+
+    .hContainer {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .hSection {
+        margin: auto;
+    }
+
+    .hSection p {
+        opacity: 0.7;
+    }
+
+
+    .hSection2 {
+        color: #eee;
+        width: 50%;
+        //text-align: left;
+
+    }
+
+    /* call to action button*/
+    .btn {
+        background-color: #DDAB38;
+    }
+
+    /*First section after header, with class name main-section
+ and children sub-section1 & sub-section2*/
+
+    .main-section {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        background-color: #004C88;
+        color: #fff;
+    }
+
+    .main-section a {
+        color: #ddab38;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .sub-section2 img	 {
+        max-width: 35vw;
+        margin: auto;
+        height: auto;
+    }
+
+    .call {
+        color: #DDAB38;;
+        font-size: 35px;
+    }
+
+    /* Style for the Sections part of the landing page*/
+
+    section {
+        min-width: 100vw;
+        //background-color: #D8CECF;
+    }
+
+    section p {
+        opacity: 0.7;
+    }
+    /*inside the section element, the is a div
+with the class of sec-child-container*/
+
+    .sec-child-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    /*The above container has child elements with
+class of sect*/
+
+    .sect {
+        text-align: left;
+        width: 23vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sect p {
+        opacity: 0.7;
+    }
+
+    .icon img {
+        width: 2rem;
+        height: auto;
+    }
+
+    img.service {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .fIcon {
+        width: 2rem;
+        height: auto;
+    }
+
+    /*footer*/
+    .footer {
+        background-color: #313A3F;
+        color: #BCBDC1;
+    }
+
+    .footer-container {
+        display: flex;
+    }
+
+    .footer-section {
+        width: 95%;
+        text-align: left;
+        margin: 0;
+    }
+
+    .footer a {
+        color: #fff;
+    }
+    /*remove nav default box shadow!!*/
+    .transparent {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .gframer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    .gframe {
+        width: 33vw;
+        height: 35vh;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .gimage {
+        min-width: 100%;
+        height: 100%;
+    }
+
+    .vid-frame {
+        min-height: 40vh;
+        min-width: 60vw;
+        margin: auto;
+    }
+
+
+}
